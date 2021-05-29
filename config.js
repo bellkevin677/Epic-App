@@ -1,6 +1,6 @@
 module.exports = {
-  clientId: '3a095ead-a361-4c33-b01b-2ad95225e9b1', // Make sure to set your environment up correctly when starting/building
-  scope: 'patient/Patient.read patient/Condition.read',
-  iss: 'https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca',
+  clientId: '593798c6-39ad-4ff6-813a-7cc4fd0e74d4', // Make sure to set your environment up correctly when starting/building
+  scope: 'user/Patient.read user/Person.read user/Practitioner.read user/RelatedPerson.read patient/AllergyIntolerance.read patient/Condition.read patient/MedicationStatement.read patient/Observation.read patient/Patient.read patient/Person.read patient/RelatedPerson.read launch/patient online_access openid profile',
+  iss: 'https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/DSTU2/',
   redirectUri: 'http://localhost:3000/',
 };
