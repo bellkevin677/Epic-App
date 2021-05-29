@@ -26,6 +26,7 @@
     "@testing-library/user-event": "^7.1.2",
     "connected-react-router": "^6.8.0",
     "fhirclient": "^2.3.1",
+    "gh-pages": "^3.2.0",
     "history": "^4.10.1",
     "immer": "^7.0.7",
     "lodash": "^4.17.19",
@@ -44,6 +45,9 @@
     "semantic-ui-react": "^1.1.1"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "yarn build:launch && react-scripts start",
     "build": "yarn build:launch && react-scripts build",
     "build:launch": "node ./internals/build.js",
